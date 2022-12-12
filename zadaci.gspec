@@ -1,0 +1,82 @@
+@objects
+	body body
+    forma #forma
+    forma2 #forma2
+	odabir_vjezbe #odabir_vjezbe
+	odabir_zadatka #odabir_zadatka
+	odabir_verzije #odabir_verzije
+    komentar #komentar
+	posalji #posalji
+    errors_log #errors_log
+    bez_gresaka #bez_gresaka
+    dodaj_rezultat #dodaj_rezultat
+
+= Width section =
+
+= Height section =
+
+= Inside section =
+    odabir_vjezbe:
+        inside forma
+    odabir_verzije:
+        inside forma
+    odabir_zadatka:
+        inside forma
+    komentar:
+        inside forma    
+    posalji:
+        inside forma
+    errors_log:
+        inside forma2
+    bez_gresaka:
+        inside forma2
+    dodaj_rezultat:
+        inside forma2
+	
+= Left of section =
+
+= Right of section =
+	
+= Above section =
+	odabir_vjezbe:
+		above posalji
+	odabir_zadatka:
+		above posalji
+	odabir_verzije:
+		above posalji
+    komentar:
+		above posalji
+    errors_log:
+        above dodaj_rezultat
+    bez_gresaka:
+        above dodaj_rezultat
+
+= Below section =
+	odabir_zadatka:
+		below odabir_vjezbe
+	odabir_verzije:
+		below odabir_zadatka
+	komentar:
+		below odabir_verzije
+    bez_gresaka:
+        below errors_log
+
+= Visible section =
+    odabir_vjezbe:
+        visible
+    odabir_zadatka:
+        visible
+    odabir_verzije:
+        visible
+    komentar:
+        visible
+    posalji:
+        visible
+    errors_log:
+        visible
+    bez_gresaka:
+        visible
+    dodaj_rezultat:
+        visible
+
+= Inside partly section =

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Zadaci</title>
+    <link rel="stylesheet" href="zadaci.css" />
+  </head>
+  <body>
+    <div id="forma">
+      <form>
+        <div>
+          <label for="odabir_vjezbe">Odabir vježbe:</label>
+          <select name="odabir_vjezbe" id="odabir_vjezbe">
+            <option disabled selected value>-- izaberite vježbu --</option>
+            <option value="vjezba1">Vježba 1</option>
+            <option value="vjezba2">Vježba 2</option>
+            <option value="vjezba3">Vježba 3</option>
+          </select>
+        </div>
+        <div>
+          <label for="odabir_zadatka">Odabir zadatka:</label>
+          <select name="odabir_zadatka" id="odabir_zadatka">
+            <option disabled selected value>-- izaberite zadatak --</option>
+            <option value="zadatak1">Zadatak 1</option>
+            <option value="zadatak2">Zadatak 2</option>
+            <option value="zadatak3">Zadatak 3</option>
+          </select>
+        </div>
+        <div>
+          <label for="odabir_verzije">Odabir verzije:</label>
+          <select name="odabir_verzije" id="odabir_verzije">
+            <option disabled selected value>-- izaberite verziju --</option>
+            <option value="verzija1">Verzija 1</option>
+            <option value="verzija2">Verzija 2</option>
+            <option value="verzija3">Verzija 3</option>
+          </select>
+        </div>
+        <div>
+          <label for="komentar">Komentar:</label>
+          <textarea id="komentar" name="komentar"></textarea>
+        </div>
+        <div id="posalji" class="dugme">
+          <button type="submit">Pošalji</button>
+          <!-- type sumbit da kad kliknes enter automatski posalje -->
+        </div>
+      </form>
+    </div>
+
+    <div id="forma2">
+      <form>
+        <div>
+          <label for="errors_log">Errors log:</label>
+          <textarea id="errors_log" name="errors_log"></textarea>
+        </div>
+        <div id="check">
+          <label for="bez_gresaka">Bez grešaka:</label>
+          <input type="checkbox" name="bez_gresaka" id="bez_gresaka" />
+        </div>
+        <div class="dugme">
+          <button id="dodaj_rezultat" type="submit">
+            Dodaj rezultat testa
+          </button>
+          <!-- type sumbit da kad kliknes enter automatski posalje -->
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

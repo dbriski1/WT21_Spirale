@@ -1,0 +1,128 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  margin: 0px;
+  height: 100%;
+}
+#meni {
+  background-color: #b0c4de;
+  width: 100%;
+  border: 0%;
+  padding: 0;
+  margin: 0;
+  height: 100px;
+  position: relative;
+}
+#linkovi {
+  position: absolute;
+  bottom: 0%;
+  left: 0;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  font-size: medium;
+  font-family: Helvetica, sans-serif;
+}
+#linkovi li {
+  display: inline; /*stavlje elemente liste u jedan red*/
+}
+
+@media screen and (max-width: 799px) {
+  #odabirVjezbe {
+    background-color: #87ceeb;
+    /* margin-top: 10px; probaj */
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  #odabirVjezbe .box {
+    background-color: #d3d3d3;
+    width: auto;
+    text-align: center;
+    margin: 10px;
+  }
+  #odabirVjezbe .box p {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-family: Helvetica, sans-serif;
+    border: 1px solid #4682b4;
+  }
+  .container-mali {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(75px, 1fr));
+    background-color: #4682b4; /*Drugi nacin*/
+    /*display: flex;*/
+  }
+  .container-mali .box2 {
+    background-color: #87ceeb;
+    margin: 5px;
+    padding: 10px 5px;
+    font-size: x-small;
+    font-family: Helvetica, sans-serif;
+  }
+  .grafovi {
+    padding-top: 10px; /*grafove spusta od vrha*/
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .graf {
+    width: 100%;
+  }
+  #okvir {
+    background-color: #b0e0e6;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* height: 100%;*/
+  }
+}
+@media screen and (min-width: 800px) {
+  #odabirVjezbe {
+    background-color: #87ceeb;
+    float: left;
+    width: 33%;
+    /* height: 100%; */
+    margin-top: 20px; /*probaj*/
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  #odabirVjezbe .box {
+    background-color: #d3d3d3;
+    width: auto;
+    text-align: center;
+    margin: 10px;
+  }
+  #odabirVjezbe .box p {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-family: Helvetica, sans-serif;
+    border: 1px solid #4682b4;
+  }
+  .container-mali {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(75px, 1fr));
+    background-color: #4682b4; /*Drugi nacin*/
+    /*display: flex;*/
+  }
+  .container-mali .box2 {
+    background-color: #87ceeb;
+    margin: 5px;
+    padding: 10px 5px;
+    font-size: x-small;
+    font-family: Helvetica, sans-serif;
+  }
+  .grafovi {
+    padding-top: 10px; /*grafove spusta od vrha*/
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .graf {
+    width: 100%;
+  }
+  #okvir {
+    background-color: #b0e0e6;
+    height: 100%;
+  }
+}

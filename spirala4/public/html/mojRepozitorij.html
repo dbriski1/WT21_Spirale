@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>mojRepozitorij</title>
+    <link rel="stylesheet" href="mojRepozitorij.css" />
+  </head>
+  <body>
+    <div id="forma">
+      <form>
+        <div>
+          <label for="URL_repozitorija">URL repozitorija:</label>
+          <input type="text" name="URL_repozitorija" id="URL_repozitorija" />
+          <!-- placeholder ako hoces nesto sto ce se maknuti sa prvim karakterom, a required da mora popuniti -->
+        </div>
+        <div>
+          <label for="akademska_godina">Akademska godina:</label>
+          <input type="text" name="akademska_godina" id="akademska_godina" />
+        </div>
+        <div>
+          <label for="imenovanje_brancheva">Imenovanje brancheva:</label>
+          <input
+            type="text"
+            name="imenovanje_brancheva"
+            id="imenovanje_brancheva"
+          />
+        </div>
+        <div class="dugme">
+          <button id="posalji" type="submit">Pošalji</button>
+          <!-- type sumbit da kad kliknes enter automatski posalje -->
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

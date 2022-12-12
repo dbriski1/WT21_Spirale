@@ -1,0 +1,166 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  margin: 0px;
+  height: 100%;
+}
+.container {
+  height: 100%;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+  text-align: center;
+}
+table {
+  border-collapse: collapse;
+}
+th,
+td {
+  padding: 5px;
+}
+
+.ime,
+.indeks,
+.procenat,
+.broj {
+  margin: 5px;
+}
+.ljudi-container {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(150px, 1fr)
+  ); /*postavlja max studenata u jedan red*/
+  grid-gap: 20px 20px;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+}
+#linkovi,
+.kartica,
+td,
+th {
+  font-size: medium;
+  font-family: Helvetica, sans-serif;
+}
+#studenti .kartica {
+  background-color: #87ceeb;
+  text-align: left;
+  border-radius: 4px;
+}
+#meni {
+  background-color: #b0c4de;
+}
+@media screen and (max-width: 499px) {
+  #studenti {
+    background-color: #4682b4;
+    height: 100%;
+  }
+  #grupe {
+    background-color: #87ceeb;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  #meni {
+    width: 100%;
+    padding: 0;
+    height: 100px;
+    display: flex; /*prikaz na dnu 1*/
+  }
+  #linkovi {
+    align-self: flex-end; /*prikaz na dnu 2*/
+    padding-bottom: 10px;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    list-style-type: none; /*bez tackica*/
+  }
+  table {
+    width: 70%;
+    margin: 0 auto; /*u centar namjesta*/
+  }
+  #termin,
+  #broj_studenata {
+    display: none;
+  }
+  td:nth-child(3),
+  td:nth-child(2) {
+    display: none;
+  }
+}
+@media screen and (min-width: 800px) {
+  #meni {
+    width: 100%;
+    border: 0%;
+    padding: 0;
+    margin: 0;
+    height: 100px;
+    position: relative;
+  }
+  #studenti {
+    background-color: #4682b4;
+    float: left;
+    width: 60%;
+    height: 100%;
+  }
+  #grupe {
+    background-color: #87ceeb;
+    height: 100%;
+    width: 40%;
+    float: right;
+    /* padding-top: 20px; tabelu spusta 20 piksela */
+  }
+  #linkovi {
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+  #linkovi li {
+    display: inline; /*stavlje elemente liste u jedan red*/
+  }
+  table {
+    width: 70%;
+    margin: 20px auto; /*u centar namjesta*/
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 799px) {
+  #meni {
+    width: 100%;
+    border: 0%;
+    padding: 0;
+    margin: 0;
+    height: 100px;
+    position: relative;
+  }
+  #studenti {
+    background-color: #4682b4;
+    height: 100%;
+  }
+  #grupe {
+    background-color: #87ceeb;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  #linkovi {
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+  #linkovi li {
+    display: inline; /*stavlje elemente liste u jedan red*/
+  }
+  table {
+    width: 70%;
+    margin: 20px auto; /*u centar namjesta*/
+  }
+}

@@ -1,0 +1,53 @@
+@objects
+	body body
+    forma #forma
+	URL_repozitorija #URL_repozitorija
+	akademska_godina #akademska_godina
+	imenovanje_brancheva #imenovanje_brancheva
+	posalji #posalji
+
+= Width section =
+
+= Height section =
+
+= Inside section =
+    URL_repozitorija:
+        inside forma
+    akademska_godina:
+        inside forma
+    imenovanje_brancheva:
+        inside forma
+    posalji:
+        inside forma
+	
+= Left of section =
+
+= Right of section =
+	
+= Above section =
+	URL_repozitorija:
+		above posalji
+	akademska_godina:
+		above posalji
+	imenovanje_brancheva:
+		above posalji
+
+= Below section =
+	akademska_godina:
+		below URL_repozitorija
+	imenovanje_brancheva:
+		below akademska_godina
+	posalji:
+		below imenovanje_brancheva
+= Visible section =
+	URL_repozitorija:
+		visible
+	akademska_godina:
+		visible
+	imenovanje_brancheva:
+		visible
+	posalji:
+		visible
+
+= Inside partly section =
+	

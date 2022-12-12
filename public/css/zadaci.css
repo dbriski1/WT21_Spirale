@@ -1,0 +1,49 @@
+label {
+  font-family: Helvetica, sans-serif;
+}
+select,
+textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+}
+textarea {
+  resize: vertical;
+}
+button {
+  background-color: #77c6f7;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: Helvetica, sans-serif;
+}
+button:hover {
+  background-color: #4682b4;
+}
+
+#forma,
+#forma2 {
+  width: 50%;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin: 0 auto;
+}
+#forma2 {
+  margin-top: 10px;
+}
+#forma .dugme {
+  width: 100%;
+  text-align: center;
+}
+body {
+  background-color: #6495ed;
+}
